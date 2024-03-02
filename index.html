@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mewing Cat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="image" id="image" src="dtbase/mewing-cat.jpg" onclick="music()" /><br />
+    <audio id="audio" src="dtbase/mewing-song.mp3" type="audio/mp3" autoplay loop></audio><br />
+    <p class="text"><span class="slogan">K E E P &nbsp;&nbsp; M E W I N G</span><br>Mewing Cat @AnezaCode</p>
+    <script>
+        function music() {
+            var mewing_audio = document.getElementById('audio');
+            mewing_audio.play();
+            var mewing_image = document.getElementById('image');
+            mewing_image.style.boxShadow = "0px 0px 20px 1px wheat";
+            mewing_image.style.transition = "3s";
+        }
+    </script>
+</body>
+</html>
